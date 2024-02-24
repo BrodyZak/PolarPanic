@@ -34,7 +34,7 @@ light_color = Color(0.882353, 1, 1, 1)
 shadow_enabled = true
 
 [node name="romeo" parent="." instance=ExtResource("2_80p5h")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.8279, 9.08333, -44.8943)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.7823, 9.0736, -44.8806)
 
 [node name="camOrigin" type="Node3D" parent="romeo"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.350738, 0)

@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 Global="*res://global.gd"
 AudioManager="*res://audioManager.gd"
 
+[filesystem]
+
+import/fbx/enabled=false
+
 [input]
 
 left={

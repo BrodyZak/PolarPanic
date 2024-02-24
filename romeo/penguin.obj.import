@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dyey4yvwsacjg"
+path="res://.godot/imported/penguin.obj-6e616a7d4638f0d2de43a1e4e3ab19bc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/penguin.obj-6e616a7d4638f0d2de43a1e4e3ab19bc.mesh"]
+
+source_file="res://romeo/penguin.obj"
+dest_files=["res://.godot/imported/penguin.obj-6e616a7d4638f0d2de43a1e4e3ab19bc.mesh", "res://.godot/imported/penguin.obj-6e616a7d4638f0d2de43a1e4e3ab19bc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

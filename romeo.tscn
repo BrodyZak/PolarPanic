@@ -1,23 +1,29 @@
-[gd_scene load_steps=5 format=3 uid="uid://b5w3q1r6ahbfq"]
+[gd_scene load_steps=7 format=3 uid="uid://b5w3q1r6ahbfq"]
 
 [ext_resource type="Script" path="res://romeo.gd" id="1_kd3ev"]
 [ext_resource type="AudioStream" uid="uid://cs4sevcpa8fkd" path="res://sounds/walking.wav" id="2_4ny1q"]
+[ext_resource type="Texture2D" uid="uid://c8eys2wubrkus" path="res://romeo/MaterialBaseColor.png" id="2_lcgv4"]
+[ext_resource type="ArrayMesh" uid="uid://dyey4yvwsacjg" path="res://romeo/penguin.obj" id="3_yu5t6"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_5afyh"]
-size = Vector3(0.6, 0.6, 0.6)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_urfla"]
+albedo_texture = ExtResource("2_lcgv4")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_emnau"]
-size = Vector3(0.6, 0.6, 0.6)
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_x3m60"]
+height = 0.5258
+radius = 0.181706
 
 [node name="romeo" type="CharacterBody3D"]
 script = ExtResource("1_kd3ev")
 metadata/_edit_group_ = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_5afyh")
+transform = Transform3D(-0.3, 2.62268e-08, 1.14641e-15, 0, -1.31134e-08, 0.3, 2.62268e-08, 0.3, 1.31134e-08, -0.0231645, -0.0294855, -0.0190815)
+material_override = SubResource("StandardMaterial3D_urfla")
+mesh = ExtResource("3_yu5t6")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("BoxShape3D_emnau")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0539932, 0.252925, 0.0207936)
+shape = SubResource("CylinderShape3D_x3m60")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_4ny1q")
