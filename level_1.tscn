@@ -49,7 +49,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.346942, 1.119)
 [node name="score" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
-theme_override_colors/font_color = Color(0.223529, 0.458824, 0.85098, 1)
+theme_override_colors/font_color = Color(0.815686, 0.207843, 0.345098, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 36
@@ -66,8 +66,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.3503, 11.0905, -43.0061)
 [node name="fish3" parent="fish" instance=ExtResource("3_8s8uy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.7404, 9.92202, -49.8764)
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="bgMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_j1clo")
 volume_db = -15.0
 autoplay = true
 bus = &"Music"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
