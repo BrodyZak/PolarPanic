@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5w3q1r6ahbfq"]
+
+[ext_resource type="Script" path="res://romeo.gd" id="1_kd3ev"]
+[ext_resource type="AudioStream" uid="uid://cs4sevcpa8fkd" path="res://sounds/walking.wav" id="2_4ny1q"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5afyh"]
+size = Vector3(0.6, 0.6, 0.6)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_emnau"]
+size = Vector3(0.6, 0.6, 0.6)
+
+[node name="romeo" type="CharacterBody3D"]
+script = ExtResource("1_kd3ev")
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_5afyh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_emnau")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_4ny1q")
+volume_db = -15.0
+pitch_scale = 0.9
+bus = &"SFX"

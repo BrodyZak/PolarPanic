@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://wspq4n6w50ys"
+path="res://.godot/imported/19_snow_Home.obj-ae72fb53d26271ebc64bdad18bda9447.mesh"
+
+[deps]
+
+files=["res://.godot/imported/19_snow_Home.obj-ae72fb53d26271ebc64bdad18bda9447.mesh"]
+
+source_file="res://snow_home/19_snow_Home.obj"
+dest_files=["res://.godot/imported/19_snow_Home.obj-ae72fb53d26271ebc64bdad18bda9447.mesh", "res://.godot/imported/19_snow_Home.obj-ae72fb53d26271ebc64bdad18bda9447.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

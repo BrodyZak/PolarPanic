@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ci6hpfcpbul7r"
+path="res://.godot/imported/uploads_files_2454913_Carp.obj-93c2ed3d21bf3eeedfd97360c09467ac.mesh"
+
+[deps]
+
+files=["res://.godot/imported/uploads_files_2454913_Carp.obj-93c2ed3d21bf3eeedfd97360c09467ac.mesh"]
+
+source_file="res://fish/uploads_files_2454913_Carp.obj"
+dest_files=["res://.godot/imported/uploads_files_2454913_Carp.obj-93c2ed3d21bf3eeedfd97360c09467ac.mesh", "res://.godot/imported/uploads_files_2454913_Carp.obj-93c2ed3d21bf3eeedfd97360c09467ac.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
