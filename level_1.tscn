@@ -78,7 +78,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.5204, 7.2178, -54.7905)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.7469, 10.6636, -42.3788)
 
 [node name="fish3" parent="fish" instance=ExtResource("3_8s8uy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53.7404, 9.27694, -49.8764)
+transform = Transform3D(0.999995, -0.00247954, 0.00171166, 0.00247028, 0.999982, 0.00539611, -0.001725, -0.00539186, 0.999984, 53.7404, 9.27694, -49.8764)
 
 [node name="fish4" parent="fish" instance=ExtResource("3_8s8uy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.9206, 11.1823, -56.1992)
@@ -99,7 +99,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.9148, 9.92217, -59.5622)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.163, 8.77029, -52.6686)
 
 [node name="fish10" parent="fish" instance=ExtResource("3_8s8uy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.3231, 11.273, -59.5016)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.2891, 10.5248, -43.0731)
 
 [node name="bgMusic" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_j1clo")
