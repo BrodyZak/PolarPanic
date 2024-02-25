@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dkcuhk3175vv8"
+path="res://.godot/imported/uploads_files_969508_The+City.obj-6caed88fbdd942c7cac18bf7050704df.mesh"
+
+[deps]
+
+files=["res://.godot/imported/uploads_files_969508_The+City.obj-6caed88fbdd942c7cac18bf7050704df.mesh"]
+
+source_file="res://level2/uploads_files_969508_The+City.obj"
+dest_files=["res://.godot/imported/uploads_files_969508_The+City.obj-6caed88fbdd942c7cac18bf7050704df.mesh", "res://.godot/imported/uploads_files_969508_The+City.obj-6caed88fbdd942c7cac18bf7050704df.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

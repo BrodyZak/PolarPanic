@@ -13,16 +13,16 @@ points = PackedVector3Array(0.0696807, -0.278868, 0.116931, 0.122432, -0.0603219
 
 [node name="fish" type="Area3D"]
 script = ExtResource("1_qrpc0")
-stream = ExtResource("4_yyd5o")
+bite = ExtResource("4_yyd5o")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(-0.978624, 0.151046, -0.139572, 0, 0.67866, 0.734453, 0.205658, 0.718753, -0.664153, 0, 0.484186, 0)
+transform = Transform3D(-0.685037, 0.105732, -0.0977003, 0, 0.475062, 0.514117, 0.143961, 0.503127, -0.464907, 0, 0.484186, 0)
 material_override = SubResource("StandardMaterial3D_rkphr")
 custom_aabb = AABB(10, 0, 0, 0, 0, 0)
 mesh = ExtResource("1_5nff3")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(-0.978624, 0.151046, -0.139572, 0, 0.67866, 0.734453, 0.205658, 0.718753, -0.664153, 0, 0.484186, 0)
+transform = Transform3D(-0.685037, 0.105732, -0.0977003, 0, 0.475062, 0.514117, 0.143961, 0.503127, -0.464907, 0, 0.484186, 0)
 shape = SubResource("ConvexPolygonShape3D_ddagx")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

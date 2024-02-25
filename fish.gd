@@ -1,6 +1,6 @@
 extends Area3D
 
-@export var stream: AudioStream
+@export var bite: AudioStream
 const ROTATION_SPEED = 2 
 
 # Called when the node enters the scene tree for the first time.
@@ -13,5 +13,5 @@ func _process(delta):
 
 func _on_body_entered(body):
 	Global.score += 1
-	AudioManager.play_sound(stream)
+	AudioManager.play_sound(bite)
 	queue_free()
