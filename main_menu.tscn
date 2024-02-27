@@ -1,8 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bo5t1vqpa3y8f"]
+[gd_scene load_steps=11 format=3 uid="uid://bo5t1vqpa3y8f"]
 
 [ext_resource type="FontFile" uid="uid://dd3dhoevedkgv" path="res://mainMenu/PolarVortex-raAA.ttf" id="1_6f55m"]
+[ext_resource type="PackedScene" uid="uid://dcur5l5xem8pr" path="res://mainMenuBG.tscn" id="1_nsgd3"]
 [ext_resource type="FontFile" uid="uid://bbpqhihm3b7ap" path="res://mainMenu/MomcakeBold-WyonA.otf" id="2_yotmg"]
-[ext_resource type="PackedScene" uid="uid://dfqpq6cn24e1s" path="res://level_1.tscn" id="3_u32o1"]
+[ext_resource type="Script" path="res://startButton.gd" id="4_p6cc0"]
+[ext_resource type="Script" path="res://quitButton.gd" id="5_q8bal"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l7dtm"]
 
@@ -18,18 +20,20 @@
 
 [node name="background" type="Node3D" parent="."]
 
-[node name="level1" parent="background" instance=ExtResource("3_u32o1")]
+[node name="level2" parent="background" instance=ExtResource("1_nsgd3")]
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="background"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 640.0
+offset_bottom = 360.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="SubViewport" type="SubViewport" parent="background/SubViewportContainer"]
 handle_input_locally = false
-size = Vector2i(1152, 648)
+size = Vector2i(1920, 1080)
 render_target_update_mode = 4
 
 [node name="Camera3D" type="Camera3D" parent="background/SubViewportContainer/SubViewport"]
@@ -68,7 +72,7 @@ theme_override_font_sizes/font_size = 90
 text = "Polar Panic"
 
 [node name="MarginContainer" type="MarginContainer" parent="Control/MarginContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 50)
+custom_minimum_size = Vector2(0, 30)
 layout_mode = 2
 
 [node name="startButton" type="Button" parent="Control/MarginContainer/VBoxContainer"]
@@ -85,6 +89,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_tmg5m")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_558je")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_eqrtq")
 text = "Start Game"
+script = ExtResource("4_p6cc0")
 
 [node name="settingsButton" type="Button" parent="Control/MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -115,3 +120,7 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_tmg5m")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_558je")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_eqrtq")
 text = "Quit"
+script = ExtResource("5_q8bal")
+
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/startButton" to="Control/MarginContainer/VBoxContainer/startButton" method="_on_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/quitButton" to="Control/MarginContainer/VBoxContainer/quitButton" method="_on_pressed"]

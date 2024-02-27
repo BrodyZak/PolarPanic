@@ -19,6 +19,12 @@ config/icon="res://icon.svg"
 Global="*res://global.gd"
 AudioManager="*res://audioManager.gd"
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/mode=3
+
 [filesystem]
 
 import/fbx/enabled=false
