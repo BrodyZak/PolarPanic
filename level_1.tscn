@@ -2,10 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://cr078wbqhiljt" path="res://snow_home/ice.png" id="1_mywbu"]
 [ext_resource type="ArrayMesh" uid="uid://wspq4n6w50ys" path="res://snow_home/19_snow_Home.obj" id="1_rswfe"]
-[ext_resource type="PackedScene" uid="uid://b5w3q1r6ahbfq" path="res://romeo.tscn" id="2_80p5h"]
 [ext_resource type="PackedScene" uid="uid://bn14eej2lq2cg" path="res://fish.tscn" id="3_8s8uy"]
 [ext_resource type="Script" path="res://score.gd" id="4_aseae"]
 [ext_resource type="AudioStream" uid="uid://bxfmlsfmqxtle" path="res://sounds/lofi.mp3" id="5_j1clo"]
+[ext_resource type="PackedScene" uid="uid://d3r15fadnh673" path="res://romeo/animated/romeo_animated.tscn" id="6_lsre5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4hklj"]
 albedo_texture = ExtResource("1_mywbu")
@@ -46,19 +46,6 @@ shape = SubResource("ConcavePolygonShape3D_ycww3")
 transform = Transform3D(1, 0, 0, 0, -0.66527, 0.746603, 0, -0.746603, -0.66527, 45.73, 24.4884, -56.7891)
 light_color = Color(0.882353, 1, 1, 1)
 shadow_enabled = true
-
-[node name="romeo" parent="." instance=ExtResource("2_80p5h")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.7823, 8.57934, -44.8806)
-
-[node name="camOrigin" type="Node3D" parent="romeo"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.350738, 0)
-
-[node name="SpringArm3D" type="SpringArm3D" parent="romeo/camOrigin"]
-spring_length = 2.0
-margin = 0.5
-
-[node name="Camera3D" type="Camera3D" parent="romeo/camOrigin/SpringArm3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.346942, 1.119)
 
 [node name="score" type="Label" parent="."]
 offset_right = 40.0
@@ -111,3 +98,6 @@ bus = &"Music"
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_kterq")
+
+[node name="romeoAnimated" parent="." instance=ExtResource("6_lsre5")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 42.8156, 10.3972, -49.334)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://b5w3q1r6ahbfq"]
+[gd_scene load_steps=8 format=3 uid="uid://qliuxvsex5ki"]
 
 [ext_resource type="Script" path="res://romeo.gd" id="1_kd3ev"]
 [ext_resource type="AudioStream" uid="uid://cs4sevcpa8fkd" path="res://sounds/walking.wav" id="2_4ny1q"]
